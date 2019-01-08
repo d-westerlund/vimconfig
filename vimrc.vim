@@ -1,7 +1,6 @@
 set nocompatible " be iMproved
 syntax enable
-"set background=dark
-"let g:solarized_termcolors=256
+
 colorscheme elflord
 set autoindent " Auto indention should be on
 set expandtab
@@ -28,4 +27,3 @@ set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 nmap <Leader><CR> :nohlsearch<cr>
-
