@@ -5,7 +5,7 @@ syntax enable
 
 runtime macros/matchit.vim
 
-colorscheme elflord
+colorscheme desert
 
 set autoindent
 set smartindent
@@ -20,6 +20,8 @@ set wildmenu
 set nu
 let mapleader=","
 set hlsearch
+hi Search ctermbg=LightYellow
+hi Search ctermfg=Red
 set incsearch
 set ignorecase
 set smartcase
