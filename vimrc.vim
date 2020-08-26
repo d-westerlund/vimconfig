@@ -1,5 +1,10 @@
 set nocompatible
 
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
 filetype plugin indent on
 syntax enable
 
@@ -37,9 +42,15 @@ noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
 
+nnoremap H gT
+nnoremap L gt
+
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 nmap <Leader><CR> :nohlsearch<cr>
+
+" Delete range without moving cursor:
+com! -range D <line1>,<line2>d | norm <C-o> 
 
 set ttimeoutlen=100
